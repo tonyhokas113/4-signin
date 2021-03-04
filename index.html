@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,40 @@
     <title>Sign up</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
+    <div class="blur"></div>
     <main class="container">
-    <div class="left-column">
-        <h1>Sign Up</h1>
-        <footer>
-        <a href="#">Privacy policy</a>
-        <p>&</p>
-        <a href="#">terms of service</a>
-        </footer>
-    </div>
-        <div class="right-column">   
-        <form>
-            <a href="#"><img src="./img/uzdaryti.jpg" width="18px" height="18px"></a>
-            <label>USERNAME</label>
-            <input type="text">
-            <label>E-MAIL</label>
-            <input type="email" inputmode="email">
-            <label>PASSWORD</label>
-            <input type="password">
-            <label>REPEAT PASSWORD</label>
-            <input type="password">
-            <input type="submit" value="Get Started">
-            <p>or</p>
-            <a href="#" class="signin">Sign in</a>
-        </form>
+        <div class="left-column">
+            LEFT COLUMN
+        </div>
+        <div class="right-column">
+            <div class="close">x</div>
+            <form>
+                <div class="form-row">
+                    <label for="">Username</label>
+                    <input type="text">
+                </div>
+                <div class="form-row">
+                    <label for="">Email</label>
+                    <input type="email">
+                </div>
+                <div class="form-row">
+                    <label for="">Password</label>
+                    <input type="password">
+                </div>
+                <div class="form-row">
+                    <label for="">Repeat password</label>
+                    <input type="password">
+                </div>
+                <div class="form-row">
+                    <button type="submit">Get started</button>
+                    <span>or</span>
+                    <a href="#">Sign in</a>
+                </div>
+            </form>
         </div>
     </main>
 </body>
+
 </html>

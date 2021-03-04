@@ -1,0 +1,134 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+.blur {
+    background-image: url("../img/kalnas.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    filter: blur(14px);
+    height: 100%;
+}
+
+.container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-column {
+    float: left;
+    width: 25%;
+    height: 70vh;
+    margin: 15vh 0 15vh 20%;
+    color: white;
+    background-color: #028CAD;
+    background-image: url("../img/kalnas.jpg");
+    background-size: 25.5vw 70.5vh;
+    filter: brightness(90%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    padding: 2vh 0 0 4vw;
+    font-size: 6vh;
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-family: inherit;
+}
+
+.home {
+    color: #ECCEFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.8vh;
+    text-decoration: none;
+    position: absolute;
+    top: 57.5vh;
+    margin-left: 10.5vw;
+}
+
+.right-column {
+    float: left;
+    width: 35%;
+    height: 76vh;
+    margin: 12vh 20% 12vh 0;
+    background-color: white;
+}
+
+form {
+    padding-left: 5vw;
+    padding-top: 14vh;
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mygtukas {
+    position: absolute;
+    top: 9vh;
+    left: 70.2vw;
+}
+
+label {
+    display: block;
+    font-size: 1.6vh;
+    padding: 5vh 0 2.1vh 0.1vw;
+}
+
+input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 24.2vw;
+    margin-bottom: 1vh;
+}
+
+.checkbox {
+    float:left;
+    display: inline-block;
+    width: 30px;
+    border: none;
+    margin: 2vh 0 0 0;
+}
+
+.remember {
+    display: inline-block;
+    padding: 0;
+    margin: 1.6vh 0 0 0;
+}
+
+.login {
+    display: block;
+    border: 1px solid #0164DB;
+    color: white;
+    background-color: #0164DB;
+    border-radius: 25px;
+    font-size: 2.2vh;
+    margin: 9vh 1.8vw 0 4.4vw;
+    padding: 0.7vh 3vw;
+    width: 10vw;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 6.8vw;
+    margin-top: 6vh;
+    color: blueviolet;
+}
+
+a:hover {
+    color: rgb(255, 60, 60);
+}
+
+.login:hover {
+    background-color: #f7e9ff;
+}
+
+input:focus {
+    outline: none;
+    background-color: #f7e9ff;
+}

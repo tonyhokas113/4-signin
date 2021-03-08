@@ -42,15 +42,19 @@ body {
   float: left;
   padding: 60px;
   background-color: #fff;
+  position: relative;
 }
 
 .close {
-  position: relative;
-  left: 382px;
-  bottom: 46px;
-  display: inline;
-  text-transform: uppercase;
-  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 57px;
 }
 
 form {
@@ -83,12 +87,12 @@ form > .form-row > input {
 }
 form > .form-row > button {
   float: left;
-  padding: 5px 30px 5px 30px;
-  font-size: 16px;
+  padding: 10px 35px 10px 35px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 20px;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: #015cda;
   color: #fff;
   text-transform: capitalize;
@@ -96,16 +100,16 @@ form > .form-row > button {
 }
 form > .form-row > span {
   float: left;
-  padding: 5px;
+  padding: 10px;
   margin-left: 15px;
   margin-right: 15px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
 }
 form > .form-row > a {
   float: left;
-  padding: 5px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 18px;
   line-height: 20px;
   color: #015cda;
   text-decoration: none;

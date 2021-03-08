@@ -14,6 +14,12 @@
 <div class="blur"></div>
     <main class="container">
         <div class="left-column">
+            <div class="dropdown">
+                <img id="rodykle" onclick="document.getElementById('right-column').style.display='initial'" src="./img/rodykle.png" alt="->" width="18px" height="18px">
+                <div class="paaiskinimas" >
+                <span>Atidaryti formą</span>
+                </div>
+            </div>
                 <h1>Sign Up</h1>
             <footer>
                 <a href="#">Privacy policy</a>
@@ -22,8 +28,13 @@
             </footer>
         </div>
         <div id="right-column">   
-            <form>
+            <div class="dropdown2">
                 <img class="mygtukas" onclick="document.getElementById('right-column').style.display='none'" src="./img/uzdaryti.jpg" alt="X" width="18px" height="18px">
+                <div class="paaiskinimas2">
+                <span>Uždaryti formą</span>
+                </div>
+            </div>
+            <form>
                     <div class="form-row">
                         <label for="">Username</label>
                         <input type="text">

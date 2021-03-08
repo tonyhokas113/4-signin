@@ -9,22 +9,26 @@ body * {
 body {
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 
 .blur {
     background-image: url("../img/kalnas.jpg");
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: 106vw 107vh;
     filter: blur(14px);
-    height: 100%;
+    width: calc(100% + 30px);
+    height: calc(100vh + 30px);
+    margin-top: -13px;
+    margin-left: -13px;
 }
 
 .container {
     position: absolute;
     top: 0px;
-    left: 0px;
     width: 100vw;
     height: 100vh;
+    min-width: 800px;
 }
 
 .left-column {
@@ -35,33 +39,40 @@ body {
     color: white;
     background-color: #028CAD;
     background-image: url("../img/kalnas.jpg");
-    background-size: 25.5vw 70.5vh;
+    background-repeat: no-repeat;
+    background-size: cover;
     filter: brightness(90%);
+    position: relative;
+    min-height: 280px;
 }
 
 #rodykle {
     position: absolute;
-    top: 2vh;
-    left: 23vw;
+    display: none;
+    top: 15px;
+    right: 15px;
     cursor: pointer;
     opacity: 60%;
 }
 
 .dropdown:hover .paaiskinimas {
-    display: block;
+    display: inline;
 }
 
 .paaiskinimas {
     display: none;
     color: black;
     position: absolute;
-    top: 1.9vh;
-    left: 17vw;
+    top: 15px;
+    right: 40px;
     font-size: 13px;
 }
 
 h1 {
-    padding: 5.5vh 0 0 4vw;
+    position: absolute;
+    top: 45px;
+    left: 60px;
+    right: 10px;
     font-size: 6.5vh; 
     font-weight: 100;
     letter-spacing: 3px;
@@ -70,7 +81,7 @@ h1 {
 
 a {
     color: #ECCEFF;
-    text-decoration: none;
+    text-decoration: underline;
     font-family: inherit;
 }
 
@@ -80,10 +91,12 @@ p {
 }
 
 footer {
-    padding-left: 4.5vw;
     font-size: 2.1vh;
     position: absolute;
-    top: 64vh;
+    bottom: 23px;
+    letter-spacing: 0.1px;
+    left: 65px;
+    right: 10px;
 }
 
 #right-column {
@@ -91,40 +104,40 @@ footer {
     width: 35%;
     height: 76vh;
     margin: 12vh 20% 12vh 0;
-    padding: 80px;
     background-color: white;
+    position: relative;
+    min-height: 300px;
 }
 
 .mygtukas {
     position: absolute;
-    top: 15vh;
-    left: 77vw;
+    top: 25px;
+    right: 25px;
     cursor: pointer;
 }
 
 .dropdown2:hover .paaiskinimas2 {
-    display: inline-block;
+    display: inline;
 }
 
 .paaiskinimas2 {
     display: none;
-    color: black;
     position: absolute;
-    top: 15vh;
-    left: 71vw;
+    top: 25px;
+    right: 50px;
     font-size: 13px;
 }
 
 form {
-    display: inline-block;
+    padding: 10vh 5vw 0 5vw;
+    height: 100%;
     color: grey;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .form-row {
     display: inline-block;
-    width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 4vh;
 }
 
 .form-row:last-of-type {
@@ -132,32 +145,35 @@ form {
 }
 
 .form-row > label {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 5px;
-    font-size: 14px;
-    line-height: 20px;
+    display: block;
+    padding: 0 0 0.5vh 0.2vw;
+    font-size: 0.9vw;
+    line-height: 3vh;
+    font-weight: 500;
     text-transform: uppercase;
   }
 
 .form-row > input {
-    display: inline-block;
-    width: 100%;
-    font-size: 20px;
-    line-height: 30px;
+    display: block;
+    margin-bottom: 1.5vh;
+    width: 25vw;
+    font-size: 1.2vw;
+    line-height: 4vh;
     border: none;
-    border-bottom: 1px solid #ccc;
+    font-style: italic;
+    border-bottom: 1.5px solid #ccc;
   }
 
 .form-row > button {
     float: left;
-    padding: 8px 50px 8px 50px;
+    padding: 1.2vh 3.5vw 1.2vh 3.5vw;
     margin: 8px 0 0 0;
-    font-size: 16px;
+    font-size: 2.2vh;
+    letter-spacing: 0.5px;
     font-weight: bold; 
     line-height: 20px;
     border: 1px solid #0164DB;
-    border-radius: 18px;
+    border-radius: 20px;
     background-color: #015cda;
     color: #fff;
     text-transform: capitalize;
@@ -166,16 +182,16 @@ form {
 
  .form-row > span {
     float: left;
-    padding: 5px;
+    padding: 1vh;
     margin: 8px 1vw 0 2vw; 
-    font-size: 16px;
+    font-size: 2.1vh;
     line-height: 20px;
   }
 
 .form-row > a {
     float: left;
-    padding: 5px;
-    font-size: 16px;
+    font-size: 2.1vh;
+    padding: 1vh;
     line-height: 20px;
     margin-top: 8px;
     color: #015cda;
@@ -193,6 +209,5 @@ a:hover {
 }
 
 input:focus {
-    outline: none;
     background-color: #f7e9ff;
 }

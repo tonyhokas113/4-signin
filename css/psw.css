@@ -87,12 +87,12 @@ footer {
     left: 130px;
 }
 #right-column {
-  width: 60%;
-  height: 470px;
-  float: right;
-  padding: 60px;
-  background-color: #fff;
-  position: relative;
+    width: 60%;
+    height: 470px;
+    float: right;
+    padding: 60px;
+    background-color: #fff;
+    position: relative;
 }
 .mygtukas {
     position: absolute;
@@ -113,14 +113,13 @@ footer {
 form {
   display: inline-block;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 70px;
   color: grey;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .form-row {
   display: inline-block;
   width: 100%;
-  margin-bottom: 30px;
 }
 .form-row:last-of-type {
   margin-bottom: 0px;
@@ -144,16 +143,9 @@ form {
   border-bottom: 1.5px solid #ccc;
   font-style: italic;
 }
-.remember {
-    display: inline-block;
-}
-.checkbox {
-    float: left;
-    margin: 4.5px 5px 60px 10px;
-}
 .form-row > button {
   float: left;
-  margin-top: 8px;
+  margin: 40px 0 0 90px;
   padding: 6px 40px 6px 40px;
   font-size: 15px;
   font-weight: 600;
@@ -165,15 +157,12 @@ form {
   text-transform: capitalize;
   cursor: pointer;
 }
-.form-row > a {
+.explain {
   float: left;
-  margin: 8px 0 0 60px;
+  margin: 8px 15px 0 15px;
   padding: 6px;
-  font-size: 15px;
+  font-size: 11px;
   line-height: 20px;
-  color: #015cda;
-  text-decoration: none;
-  font-weight: bold;
 }
 a:hover {
     color: rgb(255, 60, 60);
